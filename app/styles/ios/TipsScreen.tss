@@ -1,0 +1,26 @@
+".container": {
+	titleAttributes:{
+		color: "#fff"
+	}
+}
+".headerTitleAttribute":{
+	font: {
+		fontSize: '13dp',
+		fontFamily: 'calibril',
+		fontWeight: "bold"
+	},
+	//color: '#848484',
+	color: '#2E3C45',
+	left: "15dp",
+	bottom: "5dp",
+	textAlign: "left"
+}
+
+".titleAttribute":{
+	font: {
+		fontSize: '14dp',
+		fontFamily: 'calibril'
+	},
+	color: '#2E3C45',
+	selectedBackgroundColor: "none"
+}

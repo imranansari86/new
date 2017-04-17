@@ -1,0 +1,55 @@
+
+".container": {}
+
+"#linkTypeBtn":{
+	backgroundColor: "transparent",
+	font:{
+		fontSize: 15,
+		fontName: "Helvetica LT Light"
+	},
+	color: "#fff"
+}
+"#assignmentCodeTxtFld":{
+	hintText: L( 'emailhintText'),
+	hintTextColor: "#bfbfbf",
+	font:{
+		fontSize: 14,
+		fontName: "Helvetica LT Light"
+	},
+	color: "#fff"
+}
+"#userDOBTxtFld":{
+	// text: L( 'selectDob'),
+	// color: "#fff",
+	// font:{
+	// fontSize: 14,
+	// fontName: "Helvetica LT Light"
+	// },
+	// color: "#D8D8D8"
+	hintText: L( 'emailhintText'),
+	hintTextColor: "#D8D8D8",
+	text: L( 'selectDob'),
+	color: "#bfbfbf",
+	font:{
+		fontSize: 14,
+		fontName: "Helvetica LT Light"
+	},
+}
+"#emailORAssignment":{
+	font:{
+		fontSize: 13
+	},
+	color: "#fff"
+}
+"#loginBtn":{
+	font:{
+		fontSize: 15,
+		fontWeight: "bold"
+	},
+	color: "#fff"
+}
+"#scrollView":{
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+	scrollType: "vertical"
+}

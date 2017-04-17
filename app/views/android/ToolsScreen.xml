@@ -1,0 +1,10 @@
+<Alloy>
+	<Tab icon="/images/tools_tabicon.png">
+		<Window id="toolsScreen"  titleid="tools_title" tintColor="#fff" barColor="#3386b7" navTintColor="#fff" backButtonTitle="">
+			<View height="Titanium.UI.FILL" width="Titanium.UI.FILL" top="0" id="view">
+				<TableView id="toolsTable" height="Ti.UI.SIZE" separatorColor="transparent" backgroundColor="transparent"></TableView>
+			</View>
+			<ImageView image="/images/shadow.png" top="0" width="100%"></ImageView>
+		</Window>
+	</Tab>
+</Alloy>

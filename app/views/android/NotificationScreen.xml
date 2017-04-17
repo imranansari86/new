@@ -1,0 +1,17 @@
+<Alloy>
+	<Window id="notificationScreen" class="container" titleid="notification_title" onAndroid:back="closeWindow">
+		<View height="Titanium.UI.FILL" width="Titanium.UI.FILL" top="0" id="view">
+			<TableView id="NotificationTable" top="0" visible="true"  height="100%" separatorColor="#C8C7CC"  separatorStyle="Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE" onClick="openNotificationInfoScreen">
+				<!-- backgroundColor="#F0EFF5"  -->
+				<!-- <SearchBar platform="ios" tintColor="#3386b7" height="40">
+				</SearchBar> -->
+				<Widget id="is" src="nl.fokkezb.infiniteScroll" onEnd="loadMore" />
+			</TableView>
+			<Label id="noResultLbl" color="#BDBDBD" width="95%" text="" textAlign="Titanium.UI.TEXT_ALIGNMENT_CENTER" ></Label>
+		</View>
+		<View id="ActivityView">
+			<ActivityIndicator id="activityIndicator"></ActivityIndicator>
+			<Label id="loadingLabel"></Label>
+		</View>
+	</Window>
+</Alloy>

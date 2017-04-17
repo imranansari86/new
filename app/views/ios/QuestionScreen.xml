@@ -1,0 +1,29 @@
+<Alloy>
+	<Window id="questionScreen" tabBarHidden="true" backButtonTitle="Cancel" class="container" titleid="toolsquestion_title" navTintColor="#fff" backgroundColor="#fff" barColor="#3386b7">
+		<LeftNavButton>
+			<View  left="0">
+				<Button  id="backBtn" bottom="0" color="#fff" title="Cancel" onClick="backtoPrevious" left="0"/>
+			</View>
+		</LeftNavButton>
+		<View id="questionListView" top="0" bottom="0" width="Ti.UI.FILL">
+			<View id="topView" height="Ti.UI.SIZE" top="0" layout="vertical" width="90%">
+				<Label id="questionLable" top="30" left="0" class="questionLable" textid="firstQuestion_title"></Label>
+			</View>
+
+			<View bottom="80" height="Ti.UI.SIZE" layout="vertical">
+				<Button id="firstBtn" top="10"  class="toolsBtn" titleid="fistBtn_title"></Button>
+				<Button id="secondBtn" top="10" class="toolsBtn" titleid="secondBtn_title"></Button>
+				<Button id="thirdBtn" top="10" class="toolsBtn" titleid="thirdBtn_title"></Button>
+				<View layout="horizontal" top="30" height="5" right="20" left="20">
+					<View class="barLinesClass" backgroundColor="#69b086" left="0"></View>
+					<View  class="barLinesClass" backgroundColor="#3386b7"></View>
+					<View  class="barLinesClass" backgroundColor="#3386b7"></View>
+				</View>
+				<!-- <View height="50" backgroundColor="transparent"></View> -->
+			</View>
+			<View bottom="0" height="80">
+				<Label class="bottomLable" textid="question1Of3" textAlign="center"></Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

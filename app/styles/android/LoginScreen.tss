@@ -1,0 +1,56 @@
+
+".container": {}
+"#loginScreen":
+{
+	theme : "Theme.AppCompat.NoTitleBar.Fullscreen",
+	backgroundColor:"#3386b7",
+	exitOnClose: true
+}
+
+"#linkTypeBtn":{
+	backgroundColor: "transparent",
+	font:{
+		fontSize: 15,
+		fontName: "Helvetica LT Light"
+	},
+	color: "#fff"
+}
+"#assignmentCodeTxtFld":{
+	hintText: L( 'emailhintText'),
+	hintTextColor: "#D8D8D8",
+	font:{
+		fontSize: "14sp",
+		fontName: "Helvetica LT Light"
+	},
+	color: "#fff",
+	top: 6,
+	backgroundColor : "transparent",
+	padding: {
+		top: 0,
+		right: 0,
+		bottom: 0,
+		left: 0
+	}
+}
+"#userDOBTxtFld":{
+	text: L( 'selectDob'),
+	color: "#fff",
+	font:{
+		fontSize: "14sp",
+		fontName: "Helvetica LT Light"
+	},
+	color: "#D8D8D8"
+}
+"#emailORAssignment":{
+	font:{
+		fontSize: 13
+	},
+	color: "#fff"
+}
+"#loginBtn":{
+	font:{
+		fontSize: 15,
+		fontWeight: "bold"
+	},
+	color: "#fff"
+}

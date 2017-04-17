@@ -1,0 +1,25 @@
+<Alloy>
+	<Tab  id="tipsNavWin"  titleid="tips_title" backgroundImage="none" class="container"  icon="/images/lightf-bulb_only.png" activeIcon="/images/lightf-bulb_only_hover.png">
+		<Window id="tipsWindow" titleImage="/images/guide_logo.png" titleid="tips_title" class="container" barColor="#3386b7" navTintColor="#fff">
+			<RightNavButton>
+				<View>
+					<View height="40" width="40" onClick="openSettingScreen" right="0">
+						<Button  id="settingBtn"  backgroundImage="none"   image="/images/settings.png"  />
+					</View>
+					<View id="notificationButton" width="40" height="40" right="40">
+						<Button  id="notificationBtn" width="40" height="40" backgroundImage="none" image="/images/bell.png" onClick="openNotificationScreen" />
+						<View id="notificationV" class="notificationView" onClick="openNotificationScreen">
+							<Label id="notificationLbl" class="notificationLabel">1</Label>
+						</View>
+					</View>
+				</View>
+			</RightNavButton>
+			<View height="Titanium.UI.FILL" width="Titanium.UI.FILL" top="0" id="view">
+				<TableView id="tipsListNotificationTable" onClick="openCategoriesWiseScreen" height="100%" separatorColor="#C8C7CC" selectionStyle="Titanium.UI.iOS.TableViewCellSelectionStyle.GRAY" separatorStyle="Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE">
+					<!-- <Widget id="is" src="nl.fokkezb.infiniteScroll" onEnd="loadMore" /> -->
+				</TableView>
+				<Label id="noResultLbl" color="#BDBDBD" width="95%" text="" textAlign="Titanium.UI.TEXT_ALIGNMENT_CENTER" ></Label>
+			</View>
+		</Window>
+	</Tab>
+</Alloy>

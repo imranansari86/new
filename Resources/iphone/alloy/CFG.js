@@ -1,0 +1,1 @@
+module.exports={"dependencies":{"Loader":"1.0","nl.fokkezb.pullToRefresh":"3.0.0","nl.fokkezb.infiniteScroll":"2.0.1"}};

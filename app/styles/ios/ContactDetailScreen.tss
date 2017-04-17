@@ -1,0 +1,46 @@
+
+".container": {
+	backgroundColor: "#ffffff",
+	titleAttributes:{
+		color: "#fff",
+		font:{
+			fontFamily: 'SourceSansPro-Semibold',
+			fontSize: "18"
+		}
+	}
+}
+
+"#organizationName": {
+	color: "#4584B7",
+	font:{
+		fontFamily: 'SourceSansPro-Semibold',
+		fontSize: "15"
+	},
+	top: 10,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+"#organizationBlurb": { 
+	color: "#6C6D72",
+	font:{
+		fontFamily: 'SourceSansPro-Semibold',
+		fontSize: "13"
+	},
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+"#organizationImage": { 
+	 width: 80,
+	 height: 80,
+	 borderRadius: 40,
+	 borderColor: "#4584B7",
+	 preventDefaultImage: "true",
+	 top: 20
+}
+
+".tvHeader": {
+	color: "#6C6D72",
+	font:{
+		fontSize: "15"
+	}
+}

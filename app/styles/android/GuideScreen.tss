@@ -1,0 +1,11 @@
+
+"#guideScreen" : {
+  backgroundColor : "#ffffff",
+}
+
+
+"#guideNotificationTable":
+{
+	backgroundColor:"#fff",
+	
+}

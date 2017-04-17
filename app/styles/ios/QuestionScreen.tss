@@ -1,0 +1,18 @@
+
+".container": {}
+"#questionScreen":{
+	titleAttributes:{
+		color: "#fff",
+		font:{
+			fontFamily: 'SourceSansPro-Semibold',
+			fontSize:"18",
+		}
+	},
+	backButtonTitle:L( 'cancelBtn')
+}
+"#backBtn":{
+	font:{
+		fontWeight: "normal",
+		fontSize: "14"
+	}
+}

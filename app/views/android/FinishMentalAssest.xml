@@ -1,0 +1,43 @@
+<Alloy>
+	<Window id="finishOnlineAssest"  titleid="toolsquestion_title" height="Ti.UI.FILL" width="Ti.UI.FILL" backgroundColor="#fff">
+		<View id="topView" top="0" bottom="0" layout="vertical">
+			<Label id="headingLbl" textid="complete_mental_title" top="30" class="questionLable" width="90%"></Label>
+			<ScrollView top="20dp" bottom="0" layout="vertical" scrollingEnabled="true">
+				<Label id="detail" top="0" class="detailsLabel" width="90%" textid="complete_mental_message"></Label>
+				<Label id="contactInfo" textid="contact_info" top="10" class="questionLable" width="90%"></Label>
+				<View height="Ti.UI.SIZE" layout="vertical">
+					<View layout="vertical" height="Ti.UI.SIZE">
+						<Label id="phone" top="0" textid="phone" class="phoneLabels" left="20dp" top="5"></Label>
+						<Label id="phoneDetail" top="5" left="20" class="phoneDetails" onClick="dailNumber">+613 9016 0400</Label>
+						<View height="0.4" left="20" right="20" top="5" backgroundColor="#e6e6e6"></View>
+					</View>
+					<View layout="vertical" height="Ti.UI.SIZE">
+						<Label id="email" top="0" textid="email" class="phoneLabels" left="20dp" top="5"></Label>
+						<Label id="emailDetail" top="5" left="20" class="phoneDetails" onClick="openEmail">response@responsepsychological.com</Label>
+						<View height="0.4" left="20" right="20" top="5" backgroundColor="#e6e6e6"></View>
+					</View>
+				</View>
+				<Label id="detail" top="20" class="detailsLabel" width="90%" textid="complete_mental_messageforMoreDetails"></Label>
+				<View top="10dp" left="20" right="20" height="Ti.UI.SIZE" layout="vertical">
+					<View height="0.4" left="0" right="0" top="5" backgroundColor="#e6e6e6"></View>
+					<Label id="headingLbl" left="0" top="10" textid="forMoreDetalLink" class="yesNoTitle" onClick="openInBrowser"></Label>
+					<View height="0.4" left="0" right="0" top="5" backgroundColor="#e6e6e6"></View>
+				</View>
+				<Label id="detail" top="20" class="detailsLabel" width="90%" textid="SeconDescriptionOnFinishScreen"></Label>
+				<View top="10dp" left="20" right="20" height="Ti.UI.SIZE" layout="vertical">
+					<View height="0.4" left="0" right="0" top="5" backgroundColor="#e6e6e6"></View>
+					<Label top="10" left="0" text="https://www.beyondblue.org.au" class="yesNoTitle" onClick="openInBrowser"></Label>
+					<Label top="10" left="0"  text="https://www.headspace.com" class="yesNoTitle" onClick="openInBrowser"></Label>
+					<Label top="10" left="0"  text="https://www.smilingmind.com" class="yesNoTitle" onClick="openInBrowser"></Label>
+					<Label top="10" left="0"  text="https://www.lifeline.org.au" class="yesNoTitle" onClick="openInBrowser"></Label>
+					<Label top="10" left="0"  text="https://www.mindhealthconnect.org.au" class="yesNoTitle" onClick="openInBrowser"></Label>
+					<View height="0.4" left="0" right="0" top="5" backgroundColor="#e6e6e6"></View>
+				</View>
+				<View top="0" height="Ti.UI.SIZE" onClick="FinishAssesment">
+					<Button id="nextBitton" top="10" class="toolsBtn"  titleid="finish_Save"  backgroundColor="#69b086"></Button>
+				</View>
+				<View top="0" height="50"></View>
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,12 @@
+
+".container": {}
+
+"#finishOnlineAssest":{
+	titleAttributes:{
+		color: "#fff",
+		font:{
+			fontFamily: 'SourceSansPro-Semibold',
+			fontSize: "18"
+		}
+	}
+}

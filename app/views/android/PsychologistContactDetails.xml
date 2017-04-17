@@ -1,0 +1,41 @@
+<Alloy>
+	<View id="PsychologistContactDetails" height="Ti.UI.FILL" width="Ti.UI.FILL" backgroundColor="#fff">
+		<View id="topView" height="Ti.UI.SIZE" top="0" layout="vertical">
+			<Label id="headingLbl" textid="PsychologistSoonLabel" top="30" class="questionLable" width="90%"></Label>
+			<View top="20dp" right="20dp" left="20dp" layout="vertical" height="Ti.UI.SIZE">
+				<View height="1" left="0" right="0" backgroundColor="#3386b7"></View>
+				<Label id="headingLbl" top="10" class="yesNoTitle" width="90%"></Label>
+				<View height="1" left="0" right="0" top="10" backgroundColor="#3386b7"></View>
+			</View>
+			<ScrollView top="10dp" height="18%">
+				<Label id="detail" top="0" class="detailsLabel" width="90%"></Label>
+			</ScrollView>
+			<Label id="contactInfo" textid="contact_info" top="0" class="questionLable" width="90%"></Label>
+			<View height="Ti.UI.SIZE" layout="vertical">
+				<View layout="vertical" height="Ti.UI.SIZE">
+					<Label id="phone" top="0" textid="phone" class="phoneLabels" left="20dp" top="5" width="Ti.UI.SIZE"></Label>
+					<Label id="phoneDetail" top="5" left="20" class="phoneDetails" onClick="dailNumber">+613 9016 0400</Label>
+					<View height="0.4" left="20" right="20" top="5" backgroundColor="#e6e6e6"></View>
+				</View>
+				<View layout="vertical" height="Ti.UI.SIZE" >
+					<Label id="email" top="0" textid="email" class="phoneLabels" left="20dp" top="5" width="Ti.UI.SIZE"></Label>
+					<Label id="emailDetail" top="5" left="20" class="phoneDetails" onClick="openEmail">response@responsepsychological.com</Label>
+					<View height="0.4" left="20" right="20" top="5" backgroundColor="#e6e6e6"></View>
+				</View>
+			</View>
+		</View>
+		<View bottom="80" height="Ti.UI.SIZE" layout="vertical">
+			<Button id="nextBitton" top="10" class="toolsBtn"  titleid="next" onClick="openOnlineAsst" onTouchstart="touchStart" onTouchend="touchEnd"></Button>
+			<!-- <Button id="noButton" top="10" class="toolsBtn"  titleid="no"></Button> -->
+			<View id="barLines" layout="horizontal" right="20" left="20" top="30" height="5">
+				<View id="one" class="barLinesClass" backgroundColor="#69b086" left="0"></View>
+				<View id="two" class="barLinesClass" backgroundColor="#69b086"></View>
+				<View id="three" class="barLinesClass" backgroundColor="#3386b7"></View>
+			</View>
+		</View>
+		<View bottom="0" height="80">
+			<Label class="bottomLable" textid="question2Of3" textAlign="center"></Label>
+			<ImageView left="20" backgroundImage="none" image="/images/back_icon.png" onClick="backtoScreen"></ImageView>
+		</View>
+	</View>
+</Alloy>

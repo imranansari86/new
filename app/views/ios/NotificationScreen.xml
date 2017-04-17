@@ -1,0 +1,22 @@
+<Alloy>
+	<NavigationWindow id="notificationNavWindow" modal="true">
+		<Window id="notificationScreen" backButtonTitle="" tintColor="#fff" backgroundColor="#F2F2F2" class="container" tabBarHidden="true" titleid="notification_title" backButtonTitle="" navTintColor="#fff" backgroundColor="#fff" barColor="#3386b7">
+			<LeftNavButton>
+				<Button title="Close" backgroundImage="none" onClick="closeWindow" />
+			</LeftNavButton>
+			<View height="Titanium.UI.FILL" width="Titanium.UI.FILL" top="0" id="view">
+				<TableView id="NotificationTable" top="0" visible="true" style="Titanium.UI.iOS.TableViewStyle.PLAIN"  height="100%" separatorColor="#C8C7CC" selectionStyle="Titanium.UI.iOS.TableViewCellSelectionStyle.GRAY" separatorStyle="Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE" onClick="openNotificationInfoScreen">
+					<!-- backgroundColor="#F0EFF5"  -->
+					<!-- <SearchBar platform="ios" tintColor="#3386b7" height="40">
+					</SearchBar> -->
+					<Widget id="is" src="nl.fokkezb.infiniteScroll" onEnd="loadMore" />
+				</TableView>
+				<Label id="noResultLbl" color="#BDBDBD" width="95%" text="" textAlign="Titanium.UI.TEXT_ALIGNMENT_CENTER" ></Label>
+			</View>
+			<View id="ActivityView" visible="false">
+				<ActivityIndicator id="activityIndicator"></ActivityIndicator>
+				<Label id="loadingLabel" ></Label>
+			</View>
+		</Window>
+	</NavigationWindow>
+</Alloy>

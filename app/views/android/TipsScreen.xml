@@ -1,0 +1,12 @@
+<Alloy>
+	<Tab id="tipsNavWin" icon="/images/tips_tabicon.png" class="container">
+		<Window id="tipsWindow" titleid="tips_title" class="container">
+			<View height="Titanium.UI.FILL" width="Titanium.UI.FILL" top="0" id="view">
+				<TableView id="tipsListNotificationTable" onClick="openCategoriesWiseScreen" height="100%" separatorColor="#C8C7CC" separatorStyle="Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE" backgroundColor="#F0EFF5">
+				</TableView>
+				<Label id="noResultLbl" color="#BDBDBD" width="95%" text="" textAlign="Titanium.UI.TEXT_ALIGNMENT_CENTER" ></Label>
+			</View>
+			<ImageView image="/images/shadow.png" top="0" width="100%"></ImageView>
+		</Window>
+	</Tab>
+</Alloy>

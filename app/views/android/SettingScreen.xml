@@ -1,0 +1,59 @@
+<Alloy>
+	<Window id="settingScreen" onOpen="settingWindowOpened" class="container" titleid="setting_title" backgroundColor="#fff">
+		<TableView id="settingTable" onClick="tableViewClicked" onPostlayout="displayTableView" backgroundColor="#F0EFF5" height="100%" separatorColor="#C8C7CD">
+			<HeaderView>
+				<View backgroundColor="#ffffff" height="Ti.UI.SIZE" layout="vertical">
+					<Label id="userName">Hello Vinay</Label>
+					<Label id="assignLbl">This app is for your assignment...</Label>
+					<View backgroundColor="#C8C7CD" height="0.5" width="100%" top="10"></View>
+				</View>
+			</HeaderView>
+			<TableViewSection>
+				<HeaderView>
+					<View backgroundColor="#F0EFF5" height="40dp">
+						<Label id="AssigmentDetail" class="header">ASSIGNMENT DETAILS</Label>
+					</View>
+				</HeaderView>
+				<TableViewRow backgroundColor="white">
+					<View class="rowView">
+						<Label class="rowLbl">Assignment Code</Label>
+						<Label class="rowVal" id="assignVal">123456</Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow backgroundColor="white">
+					<View class="rowView">
+						<Label class="rowLbl">Country</Label>
+						<Label class="rowVal" id="countryVal">India</Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow backgroundColor="white">
+					<View class="rowView">
+						<Label class="rowLbl">Start Date</Label>
+						<Label class="rowVal" id="startVal">01-Feb-17</Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow backgroundColor="white">
+					<View class="rowView">
+						<Label class="rowLbl">End Date</Label>
+						<Label class="rowVal" id="endVal">31-Mar-17</Label>
+					</View>
+				</TableViewRow>
+			</TableViewSection>
+			<TableViewSection >
+				<HeaderView>
+					<View backgroundColor="#F0EFF5" height="40dp">
+						<Label id="whereAreYouNow" class="header">WHERE ARE YOU NOW?</Label>
+					</View>
+				</HeaderView>
+				<TableViewRow backgroundColor="white" selectedBackgroundColor="transparent">
+					<View class="rowView1" right="10" height="30">
+						<Label class="rowVal" id="currentCountryVal" top="0" height="100%">Phillipines</Label>
+						<!-- <Picker id="countryPicker" selectionIndicator="true" width="100%" onChange="changeCountryLblFunc"></Picker>																		 -->
+					</View>
+					<ActivityIndicator style="Ti.UI.ActivityIndicatorStyle.DARK" width="15" height="15" id="countryLoadIndicator" right="15" />
+				</TableViewRow>
+			</TableViewSection>
+		</TableView>
+		<OptionDialog id="countryPicker" onClick="changeCountryLblFunc" title="Select Country"></OptionDialog>
+	</Window>
+</Alloy>

@@ -1,0 +1,8 @@
+<Alloy>
+	<TabGroup id="tabgroupMain" elevation="5" exitOnClose="true">
+		<Require src="GuideScreen"/>
+		<Require src="ToolsScreen"/>
+		<Require src="ContactScreen"/>
+		<Require src="TipsScreen"/>
+	</TabGroup>
+</Alloy>

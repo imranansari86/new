@@ -1,0 +1,41 @@
+/*
+ * Description About Functions and its functionality..
+ */
+----------------------------
+
+-------------------------------------------------------
+/*
+ * Define method in Alloy ...
+ */
+--------------------------------------------------------
+Alloy.Globals.GetDataFromSyn() - Definition of syn API call.
+It is getting call on the above time-
+
+-First Time ,
+-When app comes from background ,
+-After a time Interval
+------------------------------------------------------------
+Store Date in preferences :-
+Ti.App.Properties.getString('lastSyncDateTime')
+Description:- Check at the time of Syn API call. When it does not have any date so we send
+the current date .and after getting response date value of last checkIn will be replace in 
+this preferences.
+---------------------------------------------------
+-------------------------
+/*
+ * Index Screen contents:-
+ */
+-----------------------------------------
+CheckCredentials()- Check Credentials if exist we move user to Home Screen without Login.
+Check Credentials if does not exist we move user to Login Screen .
+
+FunctionName:- doLogin
+Description:- Implement webservice for login user and get data from API.
+
+FunctionName:- doRegisterUser
+Description:- For sign up User..Implement webservice. Put parameter what we got at the time of user Login.
+
+BackgroundProcess- Handle background Process By.
+Ti.App.addEventListener('resumed', function(e){
+// call CheckCredentials and syn API..
+});

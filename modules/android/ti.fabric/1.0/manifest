@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+architectures: armeabi armeabi-v7a x86
+description: Fabric Integration
+author: Manoj Kumar
+license: MIT
+copyright: @ 2015
+
+# these should not be edited
+name: fabric
+moduleid: ti.fabric
+guid: 5afc8c28-8bb6-4d54-a68e-3fbef90adee3
+platform: android
+minsdk: 5.1.2.GA

@@ -1,0 +1,693 @@
+/*
+
+This is your global styles file. Selectors and rules you define
+here will be applied throughout your app. However, these rules
+have the lowest priority of any style settings.
+
+For more information, see the "Style Priorities" section of
+http://docs.appcelerator.com/titanium/latest/#!/guide/Alloy_Styles_and_Themes
+
+For example, the following would apply to all labels, windows,
+and text fields (depending on platform) in your app unless you
+overrode the settings with other TSS, XML, or JS settings:
+
+'Label[platform=android,windows]': {
+color: '#000' // all platforms except Android and Windows default to black
+}
+
+'Window': {
+backgroundColor: '#fff' // white background instead of default transparent or black
+}
+
+'TextField[platform=android]': {
+height: Ti.UI.SIZE
+}
+
+*/
+
+// '.questionLable':{
+// font:{
+// fontSize: 16
+// },
+// textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+// color: "#000"
+// }
+
+'Window[platform=android]': {
+	orientationModes: [Titanium.UI.PORTRAIT]
+}
+
+".notificationLabel": {
+	 color: "white",
+	 font: {
+	 	fontSize: 10
+	 },
+	 textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".notificationView": {
+	 top: 3,
+	 right: 5,
+	 width: 16,
+	 height: 16,
+	 backgroundColor: "#F6001E",
+	 borderRadius: 8,
+	 visible: false
+}
+
+'.questionLable[if=Alloy.Globals.iPhoneFive]':{
+	font:{
+		fontSize: 16,
+		fontFamily: 'calibril'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#000"
+}
+
+'.questionLable[platform=android]':{
+	font:{
+
+		fontSize: "16sp",
+		fontFamily: 'calibril'
+	},
+	color: "#000"
+}
+
+'.questionLable[if!=Alloy.Globals.iPhoneFive]':{
+	font:{
+		fontSize: 20,
+		fontFamily: 'calibril'
+	},
+	//textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#000"
+}
+
+
+'.windowCL':{
+	backgroundColor: "#fff",
+	navTintColor: "#fff",
+	barColor: "#3386b7",
+	titleAttributes: {
+		color: '#fff',
+		font: {
+			fontSize: 18,
+			fontFamily: 'calibril',
+			//fontName: "Helvetica LT Light",
+			FontStyle: "sharp",
+			fontType: "semibold",
+			fontWeight: "bold"
+		}
+	},
+	translucent: false,
+	backButtonTitle: ""
+}
+
+'.questionNoHeading[if=Alloy.Globals.iPhoneFour]':{
+	font:{
+		fontSize: 11,
+		fontFamily: 'calibril'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#3386b7"
+}
+'.questionNoHeading[if=Alloy.Globals.iPhoneFive]':{
+	font:{
+		fontSize: 11,
+		fontFamily: 'calibril'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#3386b7"
+}
+'.questionNoHeading[if=Alloy.Globals.iPhoneSix]':{
+	font:{
+		fontSize: 11,
+		fontFamily: 'calibril'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#3386b7"
+}
+'.questionNoHeading[if=Alloy.Globals.iPhoneSixPlus]':{
+	font:{
+		fontSize: 11,
+		fontFamily: 'calibril'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#3386b7"
+}
+
+'.headingLblCL':{
+	font:{
+		fontSize: "13sp",
+		fontFamily: 'calibril'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#3386b7"
+}
+
+
+
+'.headingLblCL[if=Alloy.Globals.iPhoneFive]':{
+	font:{
+		fontSize: 13,
+		fontFamily: 'calibril'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#3386b7"
+}
+
+'.headingLblCL[if!=Alloy.Globals.iPhoneFive]':{
+	font:{
+		fontSize: 16,
+		fontFamily: 'calibril'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#3386b7"
+}
+
+"TextField[platform=ios && if=Alloy.Globals.iPhoneFive]":{
+	font:{
+		fontSize: 15,
+		fontFamily: 'calibril',
+		fontName: "Helvetica LT Light"
+	},
+	color: "#3386b7"
+}
+"TextField":{
+	font:{
+		fontSize: "15sp",
+		fontFamily: 'calibril',
+		fontName: "Helvetica LT Light"
+	},
+	color: "#3386b7"
+}
+
+"TextField[platform=ios && if!=Alloy.Globals.iPhoneFive]":{
+	font:{
+		fontSize: 18,
+		fontFamily: 'calibril',
+		fontName: "Helvetica LT Light"
+	},
+	color: "#3386b7"
+}
+
+"TextField[platform=ios && if=Alloy.Globals.iPhoneFour]":{
+	font:{
+		fontSize: 15,
+		fontFamily: 'calibril',
+		fontName: "Helvetica LT Light"
+	},
+	color: "#3386b7"
+}
+
+"TableView[platform=ios]":{
+	backgroundColor: "transparent",
+	separatorColor: "#fff",
+	height: Ti.UI.SIZE,
+	top: 0
+}
+
+"TableView":{
+	backgroundColor: "transparent",
+	separatorColor: "#fff",
+	height: Ti.UI.SIZE,
+	top: 0
+}
+
+"TableViewRow[platform=ios]":{
+	width: "100%",
+	backgroundColor: "transparent",
+	selectedBackgroundColor: "#FF8831"
+}
+"TableViewRow":{
+	width: "100%",
+	backgroundColor: "transparent",
+	selectedBackgroundColor: "#FF8831"
+}
+
+".linkTypeBtn[if=Alloy.Globals.iPhoneFive]":{
+	backgroundColor: "transparent",
+	font:{
+		fontSize: 12,
+		fontFamily: 'calibril',
+		fontName: "Helvetica LT Light"
+	},
+	color: "#3366ff"
+}
+".linkTypeBtn":{
+	backgroundColor: "transparent",
+	font:{
+		fontSize: "12sp",
+		fontFamily: 'calibril',
+		fontName: "Helvetica LT Light"
+	},
+	color: "#3366ff"
+}
+
+
+".linkTypeBtn[if!=Alloy.Globals.iPhoneFive]":{
+	backgroundColor: "transparent",
+	font:{
+		fontSize: 15,
+		fontFamily: 'calibril',
+		fontName: "Helvetica LT Light"
+	},
+	color: "#3366ff"
+}
+
+".linkTypeBtn[if=Alloy.Globals.iPhoneFour]":{
+	backgroundColor: "transparent",
+	font:{
+		fontSize: 12,
+		fontFamily: 'calibril',
+		fontName: "Helvetica LT Light"
+	},
+	color: "#3366ff"
+}
+
+
+'.BigButton':{
+	color: "white",
+	borderRadius: 22,
+	font:{
+		fontSize: "17sp",
+		fontFamily: 'calibril',
+		fontWeight: "bold"
+	}
+}
+'.SmallButton[if=Alloy.Globals.iPhoneFive]':{
+	font:{
+		fontSize: 15,
+		fontFamily: 'calibril',
+		fontWeight: "bold"
+	},
+	backgroundColor: "#e65c00",
+	color: "#fff",
+	width: "45%",
+	height: "40dp",
+	borderRadius: "5dp"
+}
+
+'.SmallButton[if!=Alloy.Globals.iPhoneFive]':{
+	font:{
+		fontSize: 18,
+		fontFamily: 'calibril',
+		fontWeight: "bold"
+	},
+	backgroundColor: "#e65c00",
+	color: "#fff",
+	width: "45%",
+	height: "40dp",
+	borderRadius: "5dp"
+}
+
+'.SmallButton[if=Alloy.Globals.iPhoneFour]':{
+	font:{
+		fontSize: 14,
+		fontFamily: 'calibril',
+		fontWeight: "bold"
+	},
+	backgroundColor: "#e65c00",
+	color: "#fff",
+	width: "45%",
+	height: "35dp",
+	borderRadius: "5dp"
+}
+
+'.MedButton[if=Alloy.Globals.iPhoneFive]':{
+	font:{
+		fontSize: 15,
+		fontFamily: 'calibril',
+		fontWeight: "bold"
+	},
+	backgroundColor: "#e65c00",
+	color: "#fff",
+	width: "85%",
+	height: "40dp",
+	borderRadius: "5dp"
+}
+
+'.MedButton[if!=Alloy.Globals.iPhoneFive]':{
+	font:{
+		fontSize: 18,
+		fontFamily: 'calibril',
+		fontWeight: "bold"
+	},
+	backgroundColor: "#e65c00",
+	color: "#fff",
+	width: "85%",
+	height: "40dp",
+	borderRadius: "5dp"
+}
+
+'.MedButton[if=Alloy.Globals.iPhoneFour]':{
+	font:{
+		fontSize: 14,
+		fontFamily: 'calibril',
+		fontWeight: "bold"
+	},
+	backgroundColor: "#e65c00",
+	color: "#fff",
+	width: "85%",
+	height: "35dp",
+	borderRadius: "5dp"
+}
+
+'.toolsBtn[if=Alloy.Globals.iPhoneFour]':{
+	font:{
+		fontSize: 14,
+		fontFamily: 'SourceSansPro-Semibold'
+	},
+	borderRadius: "3",
+	color: "#fff",
+	height: "40" ,
+	backgroundImage: "none",
+	focusable: 'true',
+	touchEnabled: true,
+	backgroundSelectedColor: "#69b086",
+	backgroundColor: "#3386b7",
+	left: "20",
+	right: "20"
+}
+
+'.toolsBtn[if=Alloy.Globals.iPhoneFive]':{
+	font:{
+		fontSize: 15,
+		fontFamily: 'SourceSansPro-Semibold'
+	},
+	borderRadius: "3",
+	color: "#fff",
+	height: "40" ,
+	backgroundImage: "none",
+	focusable: 'true',
+	touchEnabled: true,
+	backgroundSelectedColor: "#69b086",
+	backgroundColor: "#3386b7",
+	left: "20",
+	right: "20"
+}
+
+'.toolsBtn[if=Alloy.Globals.iPhoneSix]':{
+	font:{
+		fontSize: 16,
+		fontFamily: 'SourceSansPro-Semibold'
+	},
+	borderRadius: "3",
+	color: "#fff",
+	height: "40" ,
+	focusable: 'true',
+	touchEnabled: true,
+	backgroundImage: "none",
+	backgroundSelectedColor: "#69b086",
+	backgroundColor: "#3386b7",
+	left: "20",
+	right: "20"
+}
+'.toolsBtn[if=Alloy.Globals.iPhoneSixPlus]':{
+	font:{
+		fontSize: 17,
+		fontFamily: 'SourceSansPro-Semibold'
+	},
+	borderRadius: "3",
+	color: "#fff",
+	height: "40" ,
+	focusable: 'true',
+	touchEnabled: true,
+	backgroundImage: "none",
+	backgroundSelectedColor: "#69b086",
+	backgroundColor: "#3386b7",
+	left: "20",
+	right: "20"
+}
+
+'.toolsBtn[if=Alloy.Globals.iPhoneFour]':{
+	font:{
+		fontSize: 14,
+		fontFamily: 'SourceSansPro-Semibold'
+	},
+	borderRadius: "3",
+	color: "#fff",
+	focusable: 'true',
+	touchEnabled: true,
+	backgroundImage: "none",
+	backgroundSelectedColor: "#69b086",
+	height: "40" ,
+	backgroundColor: "#3386b7",
+	left: "20",
+	right: "20"
+}
+
+'.toolsBtn[platform=android]':{
+	font:{
+		fontSize: "14sp",
+		fontWeight: "bold"
+	},
+	borderRadius: "3",
+	color: "#fff",
+	focusable: 'true',
+	touchEnabled: true,
+	backgroundImage: "none",
+	backgroundSelectedColor: "#69b086",
+	height: "40" ,
+	backgroundColor: "#3386b7",
+	left: "20",
+	right: "20"
+}
+
+".barLinesClass":
+{
+	height: "4",
+	width: "31%",
+	left: "3%",
+	borderRadius: '3'
+}
+'.bottomLable':{
+	font:{
+		fontSize: "14sp",
+		fontFamily: 'calibril'
+	},
+	textAlign: "center",
+	color: "#585858"
+}
+
+'.bottomLable[if=Alloy.Globals.iPhoneFive]':{
+	font:{
+		fontSize: 14,
+		fontFamily: 'calibril'
+	},
+	textAlign: "center",
+	color: "#585858"
+}
+'.bottomLable[if!=Alloy.Globals.iPhoneFive]':{
+	font:{
+		fontSize: 16,
+		fontFamily: 'calibril'
+	},
+	textAlign: "center",
+	color: "#585858"
+}
+'.questionLable[if=Alloy.Globals.iPhoneFour]':{
+	font:{
+		fontSize: 13,
+		fontFamily: 'SourceSansPro-Semibold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color: "#000"
+}
+
+
+
+'.questionLable[if=Alloy.Globals.iPhoneFive]':{
+	font:{
+		fontSize: 14,
+		fontFamily: 'SourceSansPro-Semibold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color: "#000"
+}
+
+'.questionLable[if=Alloy.Globals.iPhoneSix]':{
+	font:{
+		fontSize: 15,
+		fontFamily: 'SourceSansPro-Semibold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color: "#000"
+}
+'.questionLable[if=Alloy.Globals.iPhoneSixPlus]':{
+	font:{
+		fontSize: 16,
+		fontFamily: 'SourceSansPro-Semibold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color: "#000"
+}
+
+
+
+'.yesNoTitle[if=Alloy.Globals.iPhoneFour]':
+{
+	font:{
+		fontSize: 16,
+		fontFamily: 'SourceSansPro-Semibold'
+	},
+	color: "#3386b7"
+}
+'.yesNoTitle[if=Alloy.Globals.iPhoneFive]':
+{
+	font:{
+		fontSize: 17,
+		fontFamily: 'SourceSansPro-Semibold'
+	},
+	color: "#3386b7"
+}
+
+'.yesNoTitle[platform=android]':
+{
+	font:{
+		fontSize: "17sp"
+	},
+	color: "#3386b7"
+}
+'.yesNoTitle[if=Alloy.Globals.iPhoneSix]':
+{
+	font:{
+		fontSize: 18,
+		fontFamily: 'SourceSansPro-Semibold'
+	},
+	color: "#3386b7"
+}
+'.yesNoTitle[if=Alloy.Globals.iPhoneSixPlus]':
+{
+	font:{
+		fontSize: 18,
+		fontFamily: 'SourceSansPro-Semibold'
+	},
+	color: "#3386b7"
+}
+
+
+'.questiontitle':{
+	font:{
+		fontSize: "16sp",
+		fontFamily: 'SourceSansPro-Semibold'
+	},
+	textAlign: "left"
+}
+
+'.questiontitle[if=Alloy.Globals.iPhoneFive]':{
+	font:{
+		fontSize: 16,
+		fontFamily: 'SourceSansPro-Semibold'
+	},
+	textAlign: "left",
+	color: "#3386b7"
+}
+
+'.questiontitle[if!=Alloy.Globals.iPhoneFive]':{
+	font:{
+		fontSize: 20,
+		fontFamily: 'SourceSansPro-Semibold'
+	},
+	textAlign: "left",
+	color: "#3386b7"
+}
+'.detailsLabel[if=Alloy.Globals.iPhoneFour]':
+{
+	font:{
+		fontSize: 11,
+		fontFamily: 'calibril'
+	}
+}
+'.detailsLabel[if=Alloy.Globals.iPhoneFive]':
+{
+	font:{
+		fontSize: 12,
+		fontFamily: 'calibril'
+	}
+}
+'.detailsLabel[if=Alloy.Globals.iPhoneSix]':
+{
+	font:{
+		fontSize: 14,
+		fontFamily: 'calibril'
+	}
+}
+'.detailsLabel[if=Alloy.Globals.iPhoneSixPlus]':
+{
+	font:{
+		fontSize: 14,
+		fontFamily: 'calibril'
+	}
+}
+
+'.detailsLabel[platform=android]':
+{
+	font:{
+		fontSize: "14sp"
+	},
+	color: "#000"
+}
+
+
+'.phoneLabels[if=Alloy.Globals.iPhoneFour]':
+{
+	font:{
+		fontSize: 10
+	},
+	color: "#bfbfbf"
+}
+'.phoneLabels[if=Alloy.Globals.iPhoneFive]':
+{
+	font:{
+		fontSize: 11
+	},
+	color: "#bfbfbf"
+}
+'.phoneLabels[if=Alloy.Globals.iPhoneSix]':
+{
+	font:{
+		fontSize: 12
+	},
+	color: "#bfbfbf"
+}
+'.phoneLabels[if!=Alloy.Globals.iPhoneSix]':
+{
+	font:{
+		fontSize: 12
+	},
+	color: "#bfbfbf"
+}
+
+
+
+'.phoneDetails[if=Alloy.Globals.iPhoneFour]':
+{
+	font:{
+		fontSize: 12
+	}
+}
+'.phoneDetails[if=Alloy.Globals.iPhoneFive]':
+{
+	font:{
+		fontSize: 13
+	}
+}
+'.phoneDetails[platform=android]':
+{
+	font:{
+		fontSize: 13
+	},
+	color: "#000"
+}
+'.phoneDetails[if=Alloy.Globals.iPhoneSix]':
+{
+	font:{
+		fontSize: 14
+	}
+}
+'.phoneDetails[if!=Alloy.Globals.iPhoneSix]':
+{
+	font:{
+		fontSize: 14
+	}
+}

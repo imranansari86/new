@@ -1,0 +1,13 @@
+<Alloy>
+	<Tab icon="/images/contact_tabicon.png">
+		<Window  id="contactWindow" titleid="contact_title" class="container" onOpen="fetchContacts">
+			<View height="Titanium.UI.FILL" width="Titanium.UI.FILL" top="0" id="view">
+				<TableView id="contactListNotificationTable" visible="true"  height="100%" separatorColor="#C8C7CC" separatorStyle="Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE" onClick="openContactDetailScreen">
+					<Widget id="is" src="nl.fokkezb.infiniteScroll" onEnd="loadMore" />
+				</TableView>
+				<Label id="noResultLbl" color="#BDBDBD" width="95%" text="" textAlign="Titanium.UI.TEXT_ALIGNMENT_CENTER" ></Label>
+			</View>
+			<ImageView image="/images/shadow.png" top="0" width="100%"></ImageView>
+		</Window>
+	</Tab>
+</Alloy>

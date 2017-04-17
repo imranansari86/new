@@ -1,0 +1,14 @@
+".container": {
+	titleAttributes:{
+		color: "#fff"
+	}
+}
+"#tabgroupMain":{
+	titleAttributes:{
+		color: "#fff",
+		font:{
+			fontFamily: 'SourceSansPro-Semibold',
+			fontSize: "18"
+		}
+	}
+}

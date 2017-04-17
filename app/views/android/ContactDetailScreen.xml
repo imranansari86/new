@@ -1,0 +1,16 @@
+<Alloy>
+	<Window id="contactDetailWindow" titleid="contact_detail_title" class="container">
+		<TableView id="table" backgroundColor="#F0EFF5" height="100%" separatorColor="#C8C7CD">
+			<HeaderView>
+				<View backgroundColor="#ffffff" height="Ti.UI.SIZE" layout="vertical">
+					<View id="organizationImageView">
+						<ImageView id="organizationImage" image="/images/placeholder.jpg"></ImageView>
+					</View>
+					<Label id="organizationName">CDN Solutions Group</Label>
+					<Label id="organizationBlurb">Consistently delivering quality solutions</Label>
+					<View backgroundColor="#C8C7CD" height="0.5" width="100%" top="20"></View>
+				</View>
+			</HeaderView>
+		</TableView>
+	</Window>
+</Alloy>

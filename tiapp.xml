@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>com.scopeglobal.volunteercare</id>
+    <name>VolunteerCare</name>
+    <version>1.4</version>
+    <publisher>vinaybhavsar</publisher>
+    <url>http://www.scopeglobal.com</url>
+    <description>undefined</description>
+    <copyright>2016 by vinaybhavsar</copyright>
+    <icon>appicon.png</icon>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>9d52216b-72eb-4c34-9000-40712b2d41fc</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <property name="run-on-main-thread" type="bool">true</property>
+    <property name="gcm.senderid">1047122598689</property>
+    <property name="app-db-version" type="string">2</property>
+    <ios>
+        <plist>
+            <dict>
+                <key>UIAppFonts</key>
+                <array>
+                    <string>calibril.ttf</string>
+                    <string>SourceSansPro-Semibold.otf</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleLightContent</string>
+                <key>NSPhotoLibraryUsageDescription</key>
+                <string>This app doesn't require to use your photo library.</string>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest>
+            <application android:theme="@style/MyTheme">
+                <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+                <meta-data android:name="io.fabric.ApiKey" android:value="0b2a50fa30c096f0b61aae2622ab361081013c2f"/>
+                <activity
+                    android:configChanges="keyboardHidden|orientation|screenSize"
+                    android:label="@string/app_name"
+                    android:name=".VolunteercareActivity"
+                    android:screenOrientation="portrait" android:theme="@style/Theme.Titanium">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN"/>
+                        <category android:name="android.intent.category.LAUNCHER"/>
+                    </intent-filter>
+                </activity>
+            </application>
+        </manifest>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs">ti.cloud</module>
+        <module platform="android">bencoding.android.tools</module>
+        <module platform="android">ti.goosh</module>
+        <module platform="android">com.alcoapps.actionbarextras</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="ipad">false</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">false</target>
+    </deployment-targets>
+    <sdk-version>6.0.1.GA</sdk-version>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+        <plugin>ti.fabric</plugin>
+    </plugins>
+    <property name="appc-app-id" type="string">585a72d3a356ed504e447a49</property>
+    <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-development" type="string">Yao30LLEs4tUNNxEwXCFsGZVk1L1ZlOC</property>
+    <property name="acs-oauth-key-development" type="string">nsl6Qu9KZq67z5ukx6gjoxr6v38o7n5v</property>
+    <property name="acs-api-key-development" type="string">wSRQqaYdJvayzvNGN7w1I1sHhYUZAXMF</property>
+    <property name="acs-username-development" type="string">appc_app_user_dev</property>
+    <property name="acs-password-development" type="string">QwfTKRNxxyK9FwDcsn</property>
+    <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-production" type="string">gPVNqKALZoBvvvAU7YeD252gyNSuIpVL</property>
+    <property name="acs-oauth-key-production" type="string">Z0HGR30C8ZvHb4iW267oM6SMkqGxf3Ze</property>
+    <property name="acs-api-key-production" type="string">fnkHyyhuEPbU7ubl7lPJJbCwtj77RnuY</property>
+    <property name="acs-username-production" type="string">appc_app_user</property>
+    <property name="acs-password-production" type="string">B7JE9hXPR1aqq7b6Ky</property>
+    <property name="appc-org-id" type="string">100034062</property>
+    <property name="appc-creator-user-id" type="string">5370efad-e0a3-4e37-b86a-e8b96ad17439</property>
+</ti:app>

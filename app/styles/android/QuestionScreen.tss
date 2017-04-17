@@ -1,0 +1,14 @@
+
+".container": {}
+"#questionScreen":{
+	titleAttributes:{
+		color: "#fff"
+	},
+	backButtonTitle:L( 'cancelBtn')
+}
+"#backBtn":{
+	font:{
+		fontWeight: "normal",
+		fontSize: "14"
+	}
+}

@@ -1,0 +1,97 @@
+<resources>
+	<!-- General Strings -->
+	<string name="app_name">VolunteerCare</string>
+	<string name="scope_title">Scope | Global</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="next">Next</string>
+	<string name="maybe">Maybe</string>
+	<string name="finish_Save">Finish</string>
+	<string name="survey_cancel_msg">Are you sure want to cancel survey?</string>
+
+	<!-- Guide Notification screen -->
+	<string name="guide">GUIDE</string>
+	<string name="contact">CONTACTS</string>
+	<string name="tips">TIPS</string>
+	<string name="tools">TOOLS</string>
+	<!-- Setting Screen -->
+	<string name="setting_title">Settings</string>
+	<string name="logout_title">Log Out</string>
+	<string name="notification_title">Notifications</string>
+	<!-- Guide Notification screen For iphone -->
+	<string name="guide_title">Guide</string>
+	<string name="contact_title">Contacts</string>
+	<string name="contact_detail_title">Contact</string>
+	<string name="tips_title">Tips</string>
+	<string name="tools_title">Tools</string>
+	<!-- LoginScreen -->
+	<string name="cancelBtn">Cancel</string>
+	<string name="doneBtn">Done</string>
+	<string name="okBtn">Ok</string>
+	<string name="EmailORAssignmentLbl">Email or Assignment Code</string>
+	<string name="dobHint">DD/MM/YYYY</string>
+	<string name="selectDob">Select Date</string>
+	<string name="emailhintText">joe@gmail.com or AV0617BT01</string>
+	<string name="selectDob">Select Date</string>
+	<string name="DobLbl">Date of Birth</string>
+	<string name="signin_title">SIGN IN</string>
+	<string name="blank_email">Please enter email or assignment code</string>
+	<string name="email_validation">Please enter valid email or assignment code</string>
+	<string name="password_Validation">Please select date of birth</string>
+	<!-- Contstants Value -->
+	<string name="internet_check">Please check your internet connection</string>
+	<string name="network_fail">Request timeout</string>
+	<string name="no_data">No updated data available</string>
+	<string name="unable_connect">Try again</string>
+	<string name="noResultfound">No Results Found</string>
+	<string name="some_error">Something went wrong. Please check your internet connection or try again.</string>
+	<!-- Tools Screen -->
+	<string name="tools_rowtitle">Mental Wellbeing\nCheck-In</string>
+	<string name="toolsquestion_title">Mental Wellbeing Check-In</string>
+	<!-- Psychologist soon Screen -->
+	<string name="PsychologistSoonLabel">Would you like to be contacted by a Psychologist soon?</string>
+	<string name="question2Of3">Question 2 of 3</string>
+	<string name="question3Of3">Question 3 of 3</string>
+	<string name="contact_info">Contact Information</string>
+	<string name="phone">Phone</string>
+	<string name="email">Email</string>
+	<string name="PsychologistPoints">We strongly recommend that you contact Response Psychological to arrange an appointment, either by phone or skype, with one of their Psychologists who provide 24/7 counselling support to all volunteers.</string>
+	<string name="PsychologistPoints_No">No problems. Remember, if your situtation changes - we are here to help. Make contact with Response Psychological to arrange an appointment with a Psychologist.</string>
+	<string name="fistBtn_title">I feel I'm going well</string>
+	<string name="secondBtn_title">I'm not really sure</string>
+	<string name="thirdBtn_title">I don't feel that well</string>
+	<string name="online_self_assesment_label">Would you like to complete the online self assessment?</string>
+	<string name="online_self_assesment_label_YES">That's great! The online self-assessment is intended to obtain information from you regarding your deployment experience. Our Clinical Services Team will review your responses and arrange individual follow-up by phone or skype.  Your individual responses will be retained in the strictest confidence by Response Psychological Services. When you are ready to being the online self-assessment, click here</string>
+	<string name="online_self_assesment_label_No">No problems, we remind all volunteers every six months that the online self-assessment tool is available. Should you want to use this helpful tool, you can find it under the “Tools” tab in this app.  Remember, your individual responses will be retained in the strictest confidence by Response Psychological Services.</string>
+	<string name="online_self_assesment_label_Maybe">The online self-assessment is a helpful tool intended to obtain information from you regarding your deployment experience. The Clinical Services Team at Response Psychological Services will review your responses and can arrange individual follow-up by phone or skype. Your individual responses will be retained in the strictest confidence by Response Psychological Services. If you would like to complete this helpful tool at a later time, you can find it under the “Tools” tab in this app.</string>
+	<string name="complete_mental_title">Thank you for completing the Mental Wellbeing Check-in</string>
+	<string name="complete_mental_message">Should you wish to re-complete the Mental Wellbeing check-in sometime in the future, please look for it in the \"Tools\" section of this app. \n \nIf you are ever feeling down or unwell, remember there is always help available and support by the Program.</string>
+	<!-- \n To arrange a time to speak to a psychologist at Response Psychologicaql, you can find their contact Deatil here -->
+	<string name="complete_mental_messageforMoreDetails">For a more in-depth wellbeing self assessment, consider completing the Mental Health Online Self-Assessment.\n \n Click Here</string>
+	<string name="forMoreDetalLink">https://www.responsepsychological.com/assessment/</string>
+	<string name="SeconDescriptionOnFinishScreen">Your responses will be reviewed by a member of Respone Psychological's Clinical Services Team. \n\nBut again, if you feel your situation is deteriorating, Please contact Response Psychological directly and without delay.\n\nIn addition to the above, there are also many helpful resources to be found at the following websites:</string>
+	<!-- Buttons -->
+	<string name="nextBtn_title">Next</string>
+	<!-- Bottom lable -->
+	<string name="question1Of3">Question 1 of 3</string>
+
+	<!-- Question Screen -->
+	<string name="firstQuestion_title">In terms of your mental health how are you going?</string>
+	<string name="secondQuestion_title">In terms of your mental health how are you going?</string>
+	<string name="thirdQuestion_title">In terms of your mental health how are you going?</string>
+	<string name="firstAnser_text">Great, but remember things can change. It is important to maintain a healthy lifestyle and put in place wellbeing strategies that work for you. These strategies may include: building relationships; exercising and eating healthy; maintain a positive mindset; identify and use your strengths; or, contribute to your community. If you find yourself struggling to cope with everyday life, find meaning or feel connected to others, consider talking to someone, a friend, family member or a counsellor / psychologist at Response Psychological.</string>
+	<string name="secondAnswer_text">OK, this might be important. Remember when we are feeling overwhelmed, it can be hard to make sense of things and put our feelings into words. If you continue to feel "out-of-sorts", consider reducing and managing your stress levels, exercise and eat healthy, reduce alcohol and / or drug intake. If you continue to feel low or find yourself struggling to cope with everyday life, find meaning or feel connected to others, consider talking to someone, a friend, family member or a counsellor / psychologist at Response Psychological.</string>
+	<string name="thirdAnswer_text">If you have been feeling unwell, sad, or miserable for more than two weeks, or have lost interest or pleasure in usual activities, then you may be depressed. There are many resources with information on what you can do to help yourself.\n\nSome of these include:\n</string>
+	<string name="additional_content">However, while it is good to work on some things that you can do for yourself, remember, you don't have to face these challenges alone. It's important to let others known how you feel when things don't go to plan. Don't build up worries, anger or disappointments - talk about them. There are many support options, such as speaking to a counsellor /psychologist at Response Psychological, visiting a health professional or talking to a close friend or family member.</string>
+	<!-- Tips Screen Title -->
+	<string name="health_title">Health</string>
+	<string name="sefetySecutiry_title">Safety and Security</string>
+	<string name="psychological_title">Psychological</string>
+	<string name="others_title">Others</string>
+	<string name="headerFirst_title">FEATURED TIPS</string>
+	<string name="headerSecond_title">CATEGORIES</string>
+	<string name="nofeaturedTipsListAvailable">No Featured Tips Found</string>
+	<string name="noCategoriesTipsListAvailable">No Categories Tips Found</string>
+	
+	
+</resources>

@@ -1,0 +1,31 @@
+<Alloy>
+	<Tab titleid="contact_title" backgroundImage="none" id="contactNavWin"  platform="ios" icon="/images/contact-w.png" activeIcon="/images/contact-b.png">
+		<Window  id="contactWindow" titleid="contact_title" titleImage="/images/guide_logo.png" class="container" navTintColor="#fff" barColor="#3386b7" onOpen="fetchContacts">
+			<RightNavButton>
+				<View layout="horizontal">
+					<View width="40" height="40">
+						<Button  id="notificationBtn" width="40" height="40" backgroundImage="none" image="/images/bell.png" onClick="openNotificationScreen" />
+						<View id="notificationV" class="notificationView" onClick="openNotificationScreen">
+							<Label id="notificationLbl" class="notificationLabel">1</Label>
+						</View>
+					</View>
+					<Button  id="settingBtn" width="40" height="40" backgroundImage="none" image="/images/settings.png" onClick="openSettingScreen"  />
+				</View>
+			</RightNavButton>
+			<View height="Titanium.UI.FILL" width="Titanium.UI.FILL" top="0" id="view">
+				<TableView id="contactListNotificationTable" visible="true"  height="100%" separatorColor="#C8C7CC" selectionStyle="Titanium.UI.iOS.TableViewCellSelectionStyle.GRAY" separatorStyle="Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE" onClick="openContactDetailScreen">
+					<!-- <RefreshControl id="refreshControl" tintColor="#3386b7" onRefreshstart="refreshData"></RefreshControl> -->
+					<SearchBar platform="ios" tintColor="#3386b7" height="40"></SearchBar>
+					<Widget id="is" src="nl.fokkezb.infiniteScroll" onEnd="loadMore" />
+					<!-- <FooterView>
+					<View id="FooterView"  height="0" backgroundColor="transparent" layout="vertical">
+					<ActivityIndicator id="actInd"></ActivityIndicator>
+					<Label id="msgLbl" top="3" visible="false"></Label>
+					</View>
+					</FooterView> -->
+				</TableView>
+				<Label id="noResultLbl" color="#BDBDBD" width="95%" text="" textAlign="Titanium.UI.TEXT_ALIGNMENT_CENTER" ></Label>
+			</View>
+		</Window>
+	</Tab>
+</Alloy>

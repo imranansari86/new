@@ -1,0 +1,62 @@
+
+".container": {
+	titleAttributes:{
+		color: "#fff",
+		font:{
+			fontFamily: 'SourceSansPro-Semibold',
+			fontSize: "18"
+		}
+	}
+}
+"#tipsInfoScreen":{
+	titleAttributes:{
+		color: "#fff",
+		font:{
+			fontFamily: 'SourceSansPro-Semibold',
+			fontSize: "18"
+		}
+	}
+}
+"#title": {
+	color: "#2E3C45",
+	font: {
+		fontSize: 15,
+		fontFamily: 'calibril'
+	},
+	width: "95%",
+	height: Ti.UI.SIZE,
+	top: 8,
+	bottom: 8
+}
+
+"#webView": {
+	top: "0",
+	backgroundColor: "white",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	hideLoadIndicator: true
+}
+
+"#ActivityView":{
+	backgroundColor: 'transparent',
+	width: 80,
+	height: 80,
+	borderRadius: 10
+}
+
+"#loadingLabel":{
+	text: 'Please wait...',
+	//color: 'white',
+	bottom: 18,
+	color: '#BDBDBD',
+	font: {
+		fontSize: 11
+	}
+}
+"#activityIndicator[platform=ios]": {
+	top: 18,
+	//style: Ti.UI.iPhone.ActivityIndicatorStyle.PLAIN,
+	style:Ti.UI.ActivityIndicatorStyle.DARK ,
+	height: 28,
+	width: 28
+}

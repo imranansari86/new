@@ -1,0 +1,8 @@
+<Alloy>
+	<TabGroup id="tabgroupMain" tintColor="#3386B7" backgroundColor="#fff" tabsBackgroundColor="#f2f2f2"  navTintColor="#fff" barColor="#3386B7">
+		<Require src="GuideScreen" />
+		<Require src="ToolsScreen" />
+		<Require src="ContactScreen"/>
+		<Require src="TipsScreen" />
+	</TabGroup>
+</Alloy>

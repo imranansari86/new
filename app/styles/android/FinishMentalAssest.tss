@@ -1,0 +1,8 @@
+
+".container": {}
+
+"#finishOnlineAssest":{
+	titleAttributes:{
+		color: "#fff",
+	}
+}

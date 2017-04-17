@@ -1,0 +1,25 @@
+<Alloy>
+	<Window id="contactDetailWindow" titleid="contact_detail_title" backButtonTitle="" navTintColor="#fff" barColor="#3386b7" class="container">
+		<RightNavButton>
+			<View layout="horizontal">
+				<View width="40" height="40">
+					<Button  id="notificationBtn" width="40" height="40" backgroundImage="none" image="/images/bell.png" onClick="openNotificationScreen" />
+					<View id="notificationV" class="notificationView" onClick="openNotificationScreen">
+						<Label id="notificationLbl" class="notificationLabel">1</Label>
+					</View>
+				</View>
+				<Button  id="settingBtn" width="40" height="40" backgroundImage="none" image="/images/settings.png" onClick="openSettingScreen"  />
+			</View>
+		</RightNavButton>
+		<TableView id="table" visible="false" onPostlayout="displayTableView" style="Titanium.UI.iOS.TableViewStyle.GROUPED" backgroundColor="#F0EFF5" height="100%" separatorColor="#C8C7CD">
+			<HeaderView>
+				<View backgroundColor="#ffffff" height="Ti.UI.SIZE" layout="vertical">
+					<ImageView id="organizationImage" image="/images/placeholder.jpg"></ImageView>
+					<Label id="organizationName">CDN Solutions Group</Label>
+					<Label id="organizationBlurb">Consistently delivering quality solutions</Label>
+					<View backgroundColor="#C8C7CD" height="0.5" width="100%" top="20"></View>
+				</View>
+			</HeaderView>
+		</TableView>
+	</Window>
+</Alloy>

@@ -1,0 +1,33 @@
+<Alloy>
+	<Window class="container" id="loginScreen" onOpen="animateLoginViewOpacity">
+		<ScrollView top="0" id="loginView">
+			<View height="Ti.UI.SIZE">
+				<View id="logoImg" width="Ti.UI.SIZE" height="Ti.UI.SIZE">
+					<ImageView backgroundImage="none" image="/images/logo.png"></ImageView>
+				</View>
+				<View height="Ti.UI.SIZE" top="35%" opacity="0" id="loginContentView" width="Ti.UI.FILL" layout="vertical">
+					<Label  id="emailORAssignment" textid="EmailORAssignmentLbl" top="30" left="25"  touchEnabled="false"></Label>
+					<View height="Ti.UI.SIZE" top="5" left="20" right="20" layout="horizontal">
+						<ImageView id="EmailImg" width="16" backgroundImage="none" image="/images/mail_message.png" left="5"></ImageView>
+						<TextField id="assignmentCodeTxtFld" left="10" editable="false" height="Ti.UI.SIZE" maxLength="40" returnKeyType="DONE" top="0"></TextField>
+					</View>
+					<View  backgroundColor="#F2F2F2"  height="1" top="10" left="20" right="20"></View>
+					<Label  id="emailORAssignment" textid="DobLbl" top="20" left="25"  touchEnabled="false"></Label>
+					<View height="Ti.UI.SIZE" top="5" left="20" right="20" onClick="selectDobDate">
+						<View height="Ti.UI.SIZE" layout="horizontal">
+							<ImageView id="EmailImg" width="16" backgroundImage="none" image="/images/date.png" left="5"></ImageView>
+							<Label id="userDOBTxtFld" left="10" text="DD/MM/YYYY" height="30" width="80%"></Label>
+						</View>
+						<View height="Ti.UI.SIZE" width="Ti.UI.SIZE" right="5">
+							<ImageView id="dropImage" backgroundImage="none" image="/images/drop_arrow.png"></ImageView>
+						</View>
+
+					</View>
+					<View  backgroundColor="#F2F2F2"  height="1" top="10" left="20" right="20"></View>
+					<Button id="loginBtn" top="40" titleid="signin_title" borderRadius="3" color="#3386b7" height="40" backgroundColor="#fff" left="20" right="20" onClick="validation"></Button>
+
+				</View>
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

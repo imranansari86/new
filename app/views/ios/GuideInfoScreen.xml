@@ -1,0 +1,27 @@
+<Alloy>
+	<Window id="guideInfoScreen" class="container" titleid="guide_title" backButtonTitle="" navTintColor="#fff" backgroundColor="#fff" barColor="#3386b7">
+		<RightNavButton>
+			<View>
+				<View id="settingButton" height="40" width="40" onClick="openSettingScreen" right="0">
+					<Button  id="settingBtn"  backgroundImage="none" image="/images/settings.png"  />
+				</View>
+				<View id="notificationButton" width="40" height="40" right="40">
+					<Button  id="notificationBtn" width="40" height="40" backgroundImage="none" image="/images/bell.png" onClick="openNotificationScreen" />
+					<View id="notificationV" class="notificationView" onClick="openNotificationScreen">
+						<Label id="notificationLbl" class="notificationLabel">1</Label>
+					</View>
+				</View>
+			</View>
+		</RightNavButton>
+		<View top="0" layout="vertical">
+			<View id="View" top="0" height="Ti.UI.SIZE" width="Ti.UI.FILL" backgroundColor="#f2f2f2">
+				<Label id="title"></Label>
+			</View>
+			<WebView id="webView"></WebView>
+		</View>
+		<View id="ActivityView">
+			<ActivityIndicator id="activityIndicator"></ActivityIndicator>
+			<Label id="loadingLabel"></Label>
+		</View>
+	</Window>
+</Alloy>

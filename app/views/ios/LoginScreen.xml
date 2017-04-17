@@ -1,0 +1,33 @@
+<Alloy>
+	<Window class="container" id="loginScreen" backgroundColor="#3386b7" onOpen="animateLoginViewOpacity">
+		<ScrollView top="0" id="loginView">
+			<ImageView id="logoImg" backgroundImage="none" opacity="1" image="/images/logo.png"></ImageView>
+			<View height="60%" top="38%" opacity="0" id="loginContentView" width="Ti.UI.FILL" layout="vertical">
+				<Label  id="emailORAssignment" textid="EmailORAssignmentLbl" top="10" left="25"  touchEnabled="false"></Label>
+				<View height="Ti.UI.SIZE" top="5" left="20" right="20" layout="horizontal">
+					<ImageView id="EmailImg" backgroundImage="none" image="/images/mail-message.png" left="5"></ImageView>
+					<TextField id="assignmentCodeTxtFld" keyboardType="Titanium.UI.KEYBOARD_EMAIL" autocapitalization="none"  height="30" tintColor="#fff" maxLength="40" leftButtonPadding="10" returnKeyType="DONE"></TextField>
+				</View>
+				<View  backgroundColor="#F2F2F2"  height="1" top="10" left="20" right="20"></View>
+				<Label  id="emailORAssignment" textid="DobLbl" top="20" left="25"  touchEnabled="false"></Label>
+				<View height="Ti.UI.SIZE" top="5" left="20" right="20">
+					<View height="Ti.UI.SIZE" layout="horizontal" onClick="selectDobDate">
+						<ImageView id="EmailImg" backgroundImage="none" image="/images/date.png" left="5"></ImageView>
+						<Label id="userDOBTxtFld" left="10" text="DD/MM/YYYY" height="30"></Label>
+					</View>
+					<View height="Ti.UI.SIZE" width="Ti.UI.SIZE" right="5" onClick="selectDobDate">
+						<ImageView id="dropImage" backgroundImage="none" image="/images/drop_arrow.png"></ImageView>
+					</View>
+				</View>
+				<View  backgroundColor="#F2F2F2"  height="1" top="10" left="20" right="20"></View>
+				<Button id="loginBtn" top="40" titleid="signin_title" borderRadius="3" color="#3386b7" height="40" backgroundColor="#fff" left="20" right="20" onClick="validation"></Button>
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>
+<!-- <View height="Ti.UI.SIZE" width="85%" id="rememberView" top="300">
+<View id="rememberMeView" layout="horizontal" left="30" height="Ti.UI.SIZE" width="Ti.UI.SIZE" checked="true" onClick="rememberMefunc">
+<ImageView id="rememImage" image="/images/checkedbox.png" touchEnabled="false" ></ImageView>
+<Label  width="140" text="Remember Me" left="20" touchEnabled="false" id="linkTypeBtn"></Label>
+</View>
+</View> -->

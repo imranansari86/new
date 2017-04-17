@@ -1,0 +1,43 @@
+<Alloy>
+	<View id="questionfirstScreen" backgroundColor="#fff" top="0" bottom="0" width="Ti.UI.FILL">
+		<View layout="vertical" top="0" bottom="165" width="90%">
+			<View id="topView" height="Ti.UI.SIZE" top="0" layout="vertical" width="Ti.UI.FILL">
+				<Label id="questionLable" top="30" left="0" class="questionLable"></Label>
+			</View>
+			<View top="10" layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.FILL">
+				<View height="0.4" left="0" right="0" top="10" backgroundColor="#3386b7"></View>
+				<Label id="questiontitleId" top="10" class="yesNoTitle"width="90%"></Label>
+				<View height="0.4" left="0" right="0" top="10" backgroundColor="#3386b7"></View>
+			</View>
+			<ScrollView id="scrollview" top="10" height="Ti.UI.FILL" layout="vertical">
+				<Label id="questiondescription" left="0" right="0" top="10" class="detailsLabel"></Label>
+				<Label top="5" left="0" text="https://www.beyondblue.org.au" class="yesNoTitle" onClick="openWebLink"></Label>
+				<Label top="5" left="0"  text="https://www.headspace.com" class="yesNoTitle" onClick="openWebLink"></Label>
+				<Label top="5" left="0"  text="https://www.smilingmind.com" class="yesNoTitle" onClick="openWebLink"></Label>
+				<Label top="5" left="0"  text="https://www.lifeline.org.au" class="yesNoTitle" onClick="openWebLink"></Label>
+				<Label top="5" left="0"  text="https://www.mindhealthconnect.org.au" class="yesNoTitle" onClick="openWebLink"></Label>
+				<Label id="additionalContent" left="0" right="0" top="10" class="detailsLabel"></Label>
+			</ScrollView>
+		</View>
+		<View bottom="80" height="Ti.UI.SIZE" layout="vertical">
+			<!-- <Button id="firstBtn" top="10"  class="toolsBtn" titleid="nextBtn_title" onClick="openPhyso"></Button> -->
+
+			<Button id="firstBtn" top="10"  class="toolsBtn" titleid="nextBtn_title" onClick="openPhyso"></Button>
+			<View id="barLines" layout="horizontal" top="30" height="5" right="20" left="20">
+				<View id="one" class="barLinesClass" backgroundColor="#69b086" left="0"></View>
+				<View id="two" class="barLinesClass" backgroundColor="#3386b7"></View>
+				<View id="three" class="barLinesClass" backgroundColor="#3386b7"></View>
+				<!-- <View  left="5" height="4" width="30%" backgroundColor="#69b086" borderRadius='2' ></View>
+				<View  left="10" height="4" width="30%" backgroundColor="#3386b7" borderRadius='2' ></View>
+				<View  left="10" height="4" width="30%" backgroundColor="#3386b7" borderRadius='2' ></View> -->
+			</View>
+			<!-- <View height="50" backgroundColor="transparent"></View> -->
+		</View>
+		<View bottom="0" height="80">
+			<Label class="bottomLable" textid="question1Of3" textAlign="center"></Label>
+			<View height="40" width="80" left="0" onClick="backtoScreen">
+				<ImageView left="20" backgroundImage="none" image="/images/Back-icon.png"></ImageView>
+			</View>
+		</View>
+	</View>
+</Alloy>

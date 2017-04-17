@@ -1,0 +1,43 @@
+
+".container": {
+	titleAttributes:{
+		color: "#fff",
+		font:{
+			fontFamily: 'SourceSansPro-Semibold',
+			fontSize: "18"
+		}
+	}
+}
+
+"#guidWindow":{
+	titleAttributes:{
+		color: "#fff",
+		font:{
+			fontFamily: 'SourceSansPro-Semibold',
+			fontSize: "18"
+		}
+	}
+}
+"#guideNotificationTable":{
+	backgroundColor: "transparent",
+	top: 0,
+	//separatorStyle:Ti.UI.iPhone.TableViewCellSelectionStyle.NONE
+}
+
+"#actInd":{
+	style:Titanium.UI.ActivityIndicatorStyle.DARK,
+	//indicatorColor:"3386b7",
+	height: 28,
+	width: 28
+}
+"#msgLbl":{
+	font:{
+		fontSize: 12,
+		fontFamily: "SourceSansPro-Semibold",
+		fontType: "Regular",
+		fontStyle: "Sharp"
+	},
+	//color: "#3386b7",
+	color: '#BDBDBD',
+	text: "Loading..."
+}

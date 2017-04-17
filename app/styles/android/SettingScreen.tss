@@ -1,0 +1,99 @@
+
+".container": {}
+
+"#settingScreen":{
+	titleAttributes:{
+		color: "#fff",
+		font:{
+			fontFamily: 'SourceSansPro-Semibold',
+			fontSize: "18"
+		}
+	}
+}
+
+".toolBtn": {
+	color: '#3386b7',
+	font: {
+		fontWeight: "normal",
+		fontSize: "17"
+	},
+	backgroundImage: 'none',
+	style: Titanium.UI.iOS.SystemButtonStyle.BORDERED
+}
+
+"#userName": {
+	color: "#4584B7",
+	font:{
+		fontFamily: 'SourceSansPro-Semibold',
+		fontSize: "15"
+	},
+	top: 10,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+"#assignLbl": {
+	color: "#6C6D72",
+	font:{
+		fontFamily: 'SourceSansPro-Semibold',
+		fontSize: "13"
+	},
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".rowView":{
+	left: 15,
+	right: 15,
+	top: 5,
+	bottom: 5,
+	height: Ti.UI.SIZE,
+	layout: "vertical"
+}
+
+".rowView1":{
+	left: 15,
+	right: 15,
+	top: 5,
+	bottom: 5,
+	height: Ti.UI.SIZE
+}
+
+".rowLbl": {
+	font: {
+		fontFamily: 'calibril',
+		fontSize: "14"
+	},
+	left: 0
+}
+
+".rowVal": {
+	font: {
+		fontFamily: 'calibril',
+		fontSize: "15"
+	},
+	left: 0,
+	top: 5,
+	color: "#4584B7"
+}
+
+"#countryPicker":{
+	font: {
+		fontFamily: 'calibril',
+		fontSize: "15"
+	},
+	backgroundColor : "red",
+	color: "#4584B7",
+	opacity: 0
+}
+
+".header":
+{ 
+	font : {
+		fontSize : '14dp',
+		fontFamily : 'calibril',
+		fontWeight : "bold"
+	},
+	color : '#2E3C45',
+	bottom : 5,
+	textAlign : "left",
+	left : 15
+}

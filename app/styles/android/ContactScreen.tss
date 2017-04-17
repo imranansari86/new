@@ -1,0 +1,9 @@
+"#contactScreen":
+{
+	 theme : "Theme.NoBackgroundColor",
+	 backgroundColor : "#fff"
+}
+
+".container": {
+	backgroundColor: "white",
+}

@@ -1,0 +1,36 @@
+".container": {}
+"#notificationScreen":{
+	titleAttributes:{
+		color: "#fff",
+		font:{
+			fontFamily: 'SourceSansPro-Semibold',
+			fontSize: "18"
+		}
+	}
+}
+
+"#ActivityView":{
+	backgroundColor: 'black',
+	opacity: 0.9,
+	width: 80,
+	height: 80,
+	borderRadius: 10
+}
+
+"#activityIndicator[platform=ios]": {
+	top: 18,
+	//style: Ti.UI.iPhone.ActivityIndicatorStyle.PLAIN,
+	style:Ti.UI.ActivityIndicatorStyle.PLAIN,
+	height: 28,
+	width: 28
+}
+
+"#loadingLabel":{
+	text: 'Please wait...',
+	color: 'white',
+	bottom: 18,
+	color: 'white',
+	font: {
+		fontSize: 11
+	}
+}

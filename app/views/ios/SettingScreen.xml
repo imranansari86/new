@@ -1,0 +1,91 @@
+<Alloy>
+	<Window id="settingScreen" onOpen="settingWindowOpened" class="container" tabBarHidden="true" titleid="setting_title" backButtonTitle="" navTintColor="#fff" backgroundColor="#F0EFF5" barColor="#3386b7">
+		<!-- <View top="10dp" left="0" right="0" height="Ti.UI.SIZE" layout="vertical" onClick="logout">
+		<View height="0.4" left="0" right="0" top="5" backgroundColor="#e6e6e6"></View>
+		<Label id="headingLbl" left="20" right="20" top="10" textid="logout_title" class="yesNoTitle"></Label>
+		<View height="0.4" left="0" right="0" top="5" backgroundColor="#e6e6e6"></View>
+		</View> -->
+		<RightNavButton>
+			<Button id="logoutBtn" title="Logout" onClick="logout" />
+		</RightNavButton>
+		
+		<TableView id="settingTable" scrollable="false" onClick="tableViewClicked" onPostlayout="displayTableView" style="Titanium.UI.iOS.TableViewStyle.PLAIN" backgroundColor="#FFFFFF" height="382" separatorColor="#C8C7CD">
+			<HeaderView>
+				<View backgroundColor="#ffffff" height="Ti.UI.SIZE" layout="vertical">
+					<Label id="userName">Hello Vinay</Label>
+					<Label id="assignLbl">This app is for your assignment...</Label>
+					<View backgroundColor="#C8C7CD" height="0.5" width="100%" top="10"></View>
+				</View>
+			</HeaderView>
+			
+			<TableViewSection> 
+				<HeaderView>
+					<View backgroundColor="#F0EFF5" height="40">
+						<Label class="headerLabel">ASSIGNMENT DETAILS</Label>
+					</View>
+				</HeaderView>
+				
+				<TableViewRow backgroundColor="white" selectionStyle="Titanium.UI.iOS.TableViewCellSelectionStyle.NONE">
+					<View class="rowView">
+						<Label class="rowLbl">Assignment Code</Label>
+						<Label class="rowVal" id="assignVal">123456</Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow backgroundColor="white" selectionStyle="Titanium.UI.iOS.TableViewCellSelectionStyle.NONE">
+					<View class="rowView">
+						<Label class="rowLbl">Country</Label>
+						<Label class="rowVal" id="countryVal">India</Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow backgroundColor="white" selectionStyle="Titanium.UI.iOS.TableViewCellSelectionStyle.NONE">
+					<View class="rowView">
+						<Label class="rowLbl">Start Date</Label>
+						<Label class="rowVal" id="startVal">01-Feb-17</Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow backgroundColor="white" selectionStyle="Titanium.UI.iOS.TableViewCellSelectionStyle.NONE">
+					<View class="rowView">
+						<Label class="rowLbl">End Date</Label>
+						<Label class="rowVal" id="endVal">31-Mar-17</Label>
+					</View>
+				</TableViewRow>
+				
+			</TableViewSection>
+			
+				
+			<TableViewSection>
+				<HeaderView>
+					<View backgroundColor="#F0EFF5" height="40">
+						<Label class="headerLabel">WHERE ARE YOU NOW?</Label>
+					</View>
+				</HeaderView>
+				
+				<TableViewRow backgroundColor="white" selectionStyle="Titanium.UI.iOS.TableViewCellSelectionStyle.NONE" hasChild="true">
+					<View class="rowView" right="45" height="30">
+						<Label class="rowVal" id="currentCountryVal" top="0" height="100%">Phillipines</Label>
+					</View>
+					<ActivityIndicator style="Ti.UI.ActivityIndicatorStyle.DARK" width="15" height="15" id="countryLoadIndicator" right="15" />
+				</TableViewRow>
+				
+			</TableViewSection>
+			
+		</TableView>
+		<View id="pickerView" width="Ti.UI.FILL" height="262" bottom="-262" layout="vertical">
+			<Toolbar platform="ios" barColor="#f2f2f2" tintColor="#3386b7" translucent="true">
+				<Items>
+					<Button class="toolBtn" id="cancel" systemButton="CANCEL" onClick="closePicker" />
+					<FlexSpace/> 
+					<Button class="toolBtn" id="done" title="Done" onClick="closePicker" systemButton="DONE" />
+				</Items>
+			</Toolbar>
+			<Picker id="countryPicker" selectionIndicator="true" width="100%">
+				<!-- <PickerColumn id="column1">
+					<PickerRow title="India"/>
+					<PickerRow title="Australia"/>
+					<PickerRow title="Nepal"/>
+					<PickerRow title="Bhutan"/>
+				</PickerColumn> -->
+			</Picker>
+		</View>
+	</Window>
+</Alloy>

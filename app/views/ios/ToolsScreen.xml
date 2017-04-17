@@ -1,0 +1,20 @@
+<Alloy>
+	<Tab titleid="tools_title" id="ToolsNavWin" backgroundImage="none" platform="ios" class="container"  icon="/images/tool_normal.png">
+		<Window id="toolsWindow"  titleid="tools_title" titleImage="/images/guide_logo.png" tintColor="#fff" barColor="#3386b7" navTintColor="#fff" backButtonTitle="">
+			<RightNavButton>
+				<View layout="horizontal">
+					<View width="40" height="40">
+						<Button  id="notificationBtn" width="40" height="40" backgroundImage="none" image="/images/bell.png" onClick="openNotificationScreen" />
+						<View id="notificationV" class="notificationView" onClick="openNotificationScreen">
+							<Label id="notificationLbl" class="notificationLabel">1</Label>
+						</View>
+					</View>
+					<Button  id="settingBtn" width="40" height="40" backgroundImage="none" image="/images/settings.png" onClick="openSettingScreen"  />
+				</View>
+			</RightNavButton>
+			<View height="Titanium.UI.FILL" width="Titanium.UI.FILL" top="0" id="view">
+				<TableView id="toolsTable" height="Ti.UI.FILL" scrollable="false" separatorColor="transparent" ></TableView><!-- onClick="openGuidInfoScreen" -->
+			</View>
+		</Window>
+	</Tab>
+</Alloy>

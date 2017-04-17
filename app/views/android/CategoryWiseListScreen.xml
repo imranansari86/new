@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id="categoryWiseWin"  class="container">
+		<View height="Titanium.UI.FILL" width="Titanium.UI.FILL" top="0" id="view">
+				<TableView id="categoryWiseNotificationTable" onClick="tipsInfoScreen" visible="true"  height="100%" separatorColor="#C8C7CC" separatorStyle="Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE">
+					<Widget id="is" src="nl.fokkezb.infiniteScroll" onEnd="loadMore" />
+				</TableView>
+				<Label id="noResultLbl" color="#BDBDBD" width="95%" text="" textAlign="Titanium.UI.TEXT_ALIGNMENT_CENTER" ></Label><!-- textid="noResultfound" -->
+			</View>
+	</Window>
+</Alloy>
